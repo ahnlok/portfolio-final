@@ -1,0 +1,601 @@
+/* Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+*
+{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section */
+section {
+    padding: 100px;
+}
+/* Introduction */
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(./images/imgtwo.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* banner and h2 */
+.banner h2 {
+    font-size: 3em;
+    color: 	#FFFAFA;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+/* banner h2 span */
+.banner h2 span {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+/* banner h3 */
+.banner h3 {
+    font-size: 2em;
+    color: #FFFAFA;
+    font-weight: 700;
+   
+}
+
+/* button */
+.btn {
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #FFFAFA;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+
+/* Header/Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+}
+
+/* To make navbar hid while scrolling down */
+header.sticky {
+    background:  #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* header logo (Portfolio) */
+header .logo {
+    color:  #FFFAFA;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+/* Header ul */
+header ul {
+    position: relative;
+    display: flex;
+}
+
+/* header li */
+header ul li {
+    position: relative;
+    list-style: none;
+}
+/*  */
+/* header ul li a */
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color:  #FFFAFA; 
+    text-decoration: none;
+}
+
+/* For Navbar lists to change color when scroll down */
+header.sticky ul li a {
+    color:  #111;
+}
+
+.heading {
+   width: 100%;
+   text-align: center;
+   margin-bottom: 30px;
+   color: #111;
+
+}
+
+.heading h2 {
+    font-weight: 800;
+    font-size: 70px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* About Me Description */
+.contentBx h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+/* About Me Image */
+.about{
+    background: url(./images/nyc.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    align-items: center;
+}
+.w50 {
+    min-width: 40%;
+}
+.w50 img{
+    border-radius: 2%;
+    padding-right: 40px;
+}
+img {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0;;
+    border-radius: 50%;
+}
+/* Font Title Color */
+.me {
+    color: lightyellow;
+   
+}
+#lang-title{
+    color: darkcyan;
+   
+}
+#scroll {
+    color:rgb(189, 228, 241);
+}
+/* My Work */
+.services{
+    background: url(./images/stair.jpg), linear-gradient(#778899, #B0C4DE);
+    min-height: 100vh;
+    background-size: cover;
+    align-items: center;
+}
+
+.heading.white{
+    color: #FFFAFA; 
+    font-weight: bold;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBx{
+    padding: 40px 20px;
+    background: #222;
+    color:  #FFFAFA; 
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+/* When hoover over to the image, it changes color */
+.services .content .servicesBx:hover {
+    background: #2196f3;
+}
+
+.services .content .servicesBx img {
+    width: 300px;
+    height: 300px;
+    /* filter: invert(1); */
+}
+
+.services .content .servicesBx h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.work {
+    background: url(./images/office.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    align-items: center;
+}
+.work .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+/* Flip Card */
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 350px;
+    /* border: 0px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background-color: transparent;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .namep {
+      color: #fff
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: transparent;
+    color: black;
+  }
+
+  .flip-car-front h1{
+      padding-bottom: 10px;
+  }
+
+  .flip-card-front img{
+      display: block;
+  }
+
+  .title-header {
+    color: khaki;
+  }
+
+  .lang, .note, .link {
+      font-size: 0.8rem;
+      text-align: left;
+      margin-left: 5px;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+/* #pimg {
+    border: 0.5px solid black;
+} */
+/* .work .content #workBx {
+    width: 50%;
+    padding: 20px;
+} 
+
+.work .content #workBx img {
+    max-width: 100%;
+}  */
+
+/* My Resume */
+.testimonial {
+    background: #fff;
+    min-height: 100vh;
+    background-size: cover;
+    align-items: center;
+}
+.resume{
+    color: rgb(40, 152, 221);
+}
+.testimonial .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial .content .testimonialBx {
+    min-width: calc(50% - 40px);
+    padding: 20px 20px;
+    margin: 0;
+    background: #2196f3;
+
+}
+
+.testimonial .content .testimonialBx p {
+    color: #fff;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.testimonial .content .testimonialBx .workD {
+    font-size: 13px;
+    font-style: italic;
+}
+/* 
+.testimonial .content .testimonialBx h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+} */
+
+/* .testimonial .content .testimonialBx h3 span {
+    font-size: 14px;
+    font-weight: 400;
+} */
+
+/* Contact */
+.contact {
+    background: #111;
+}
+.contact h2 {
+    color: #fff;
+    size: 2rem;
+}
+.contact #hashtag {
+    color: #fff;
+}
+.contact li {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+}
+.social-icon {
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.formBx {
+    min-width: 60%;
+}
+
+.formBx form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx form h3, .contactInfo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBx form input, .formBx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formBx form textarea {
+    min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+    color: #999;
+}
+
+.formBx form input[type="submit"] {
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.send-button:hover{
+    background-image: none !important;
+    background: lightblue !important;
+    color: white;
+}
+/* #click-button {
+    cursor: pointer;
+} */
+#click-button:hover{
+    background-image: none !important;
+    background: lightblue !important;
+    color: white;
+}
+.contactInfo{
+    min-width: 40%;
+}
+
+.contactInfoBx{
+    position: relative;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBx .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.contactInfoBx .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 17px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+.copyright {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px)
+{
+    header,
+    header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .menu.active{
+        left: 0;
+    }
+    header ul li a {
+        color: #111;
+    }
+    /* Toggle Icon */
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(./images/menu-icon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 100px 50px;
+    }
+    .banner {
+        padding: 150px;
+    }
+    .banner h2 {
+        font-size: 1.5em;
+    }
+    .banner h3 {
+        font-size: 1em;
+    }
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2 {
+        font-size: 24px;
+    }
+    .contentBx h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .w50 {
+        margin-bottom: 20px;
+    }
+    .services .content .servicesBx {
+        margin: 10px;
+    }
+    .work .content .workBx {
+        width: 100%;
+        padding: 10px;
+    }
+    .testimonial .content .testimonialBx {
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2196f3;
+    }
+    .testimonial .content .testimonialBx h3 {
+        margin-top: 20px;
+    }
+    .contactInfo {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    header, 
+    header.sticky {
+        padding: 20px 20px;
+    }
+    .banner {
+        padding: 150px 20px 100px;
+    }
+    section {
+        padding: 100px 20px;
+    }
+}
