@@ -28,7 +28,7 @@ section {
 
 /* banner and h2 */
 .banner h2 {
-    font-size: 3em;
+    font-size: 5em;
     color: 	#FFFAFA;
     font-weight: 500;
     line-height: 1.5em;
@@ -36,7 +36,7 @@ section {
 
 /* banner h2 span */
 .banner h2 span {
-    font-size: 1.7em;
+    font-size: 2em;
     font-weight: 700;
 }
 
@@ -170,7 +170,7 @@ img {
 }
 /* Font Title Color */
 .me {
-    color: lightyellow;
+    color: white;
    
 }
 #lang-title{
@@ -178,7 +178,9 @@ img {
    
 }
 #scroll {
-    color:rgb(189, 228, 241);
+    color: white;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5 black;
 }
 /* My Work */
 .services{
