@@ -229,7 +229,7 @@ img {
     padding-bottom: 10px;
 }
 .work {
-    background: url(./images/office.jpg);
+    /* background: url(./images/office.jpg); */
     min-height: 100vh;
     background-size: cover;
     align-items: center;
@@ -264,7 +264,7 @@ img {
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
   .namep {
-      color: #fff
+      color: black;
   }
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -324,7 +324,7 @@ img {
 
 /* My Resume */
 .testimonial {
-    background: #fff;
+    background: lightgrey;
     min-height: 100vh;
     background-size: cover;
     align-items: center;
